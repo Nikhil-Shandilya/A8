@@ -22,3 +22,11 @@ mlflow.log_metric("mse",mse)
 mlflow.sklearn.log_model(model,"model")
 mlflow.end_run()
 print("Model trained and logged by mlflow")
+
+"""
+sudo apt update
+sudo apt install python3-pip -y
+pip3 install mlflow pandas scikit-learn
+python3 train.py
+mlflow ui
+"""
